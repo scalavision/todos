@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  :root {
+
+    --color-text-50: 250, 250, 250;
+    --color-text-100: 244, 244, 245;
+    
+    /*color schema base: lime */
+    --color-base-700: 77, 124, 15;
+    --color-base-800: 63, 98, 18;
+    --color-base-900: 54, 83, 20;
+
+    /*color schema muted: cyan */
+    --color-muted-50: 236, 254, 255;
+    --color-muted-100: 207, 250, 254;
+
+    /*color schema fill: zinc */
+    --color-bkg-700: 63, 63, 70;
+    --color-bkg-800: 39, 39, 42;
+    --color-bkg-900: 24, 24, 27;
+
+    --color-border-base: 253, 186, 116;
+    --color-border-muted: 254, 215, 170;
+    --color-border-accent: 251, 146, 60;
+
+    /* TODO: implement shadow color*/
+    --color-shadow: 253, 186, 116;
+    --color-shadow: 254, 215, 170;
+    --color-shadow: 251, 146, 60;
+
+    --color-fill-inverted: 251, 201, 147;
+    
+    --color-button-accent: 255, 255, 255;
+    --color-button-accent-hover: 238, 242, 255;
+    --color-button-muted: 99, 102, 241;
+  }
+
+  .theme-dark {
+    /*#ffedd5*/
+    /*
+    --color-text-base: 253, 186, 116;
+    --color-text-accent: 254, 215, 170;
+    --color-text-muted: 251, 146, 60;
+    --color-text-inverted: 80, 10, 10;
+
+    --color-border-base: 253, 186, 116;
+    --color-border-accent: 254, 215, 170;
+    --color-border-muted: 251, 146, 60;
+    
+    --color-fill: 39, 8, 12;
+    --color-fill-inverted: 170, 101, 145;
+
+    --color-button-accent: 255, 255, 255;
+    --color-button-accent-hover: 238, 242, 255;
+    --color-button-muted: 99, 102, 241;
+    */
+  }
+
+  [type='text'],
+  [type='email'],
+  [type='url'],
+  [type='password'],
+  [type='number'],
+  [type='date'],
+  [type='datetime-local'],
+  [type='month'],
+  [type='search'],
+  [type='tel'],
+  [type='time'],
+  [type='week'],
+  [multiple],
+  textarea,
+  select {
+    @apply border-none;
+  }
+
+  .form-field[type='text'],
+  .form-field[type='email'],
+  .form-field[type='url'],
+  .form-field[type='password'],
+  .form-field[type='number'],
+  .form-field[type='date'],
+  .form-field[type='datetime-local'],
+  .form-field[type='month'],
+  .form-field[type='search'],
+  .form-field[type='tel'],
+  .form-field[type='time'],
+  .form-field[type='week'],
+  .form-field[multiple],
+  .form-field textarea,
+  .form-field select {
+    @apply w-full border border-pink-500 px-3 py-2 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500;
+  }
+
+  [type='checkbox'],
+  [type='radio'] {
+    @apply h-5 w-5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-50 cursor-pointer;
+  }
+}
+
+/*
+@layer components {
+
+}
+
+
+@layer utilities {}
+*/
