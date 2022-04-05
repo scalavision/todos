@@ -4,10 +4,11 @@
 
 @layer base {
 
+  /* default values for skin */
   :root {
 
     --color-text-50: 250, 250, 250;
-    --color-text-100: 244, 244, 245;
+    --color-text-100: 173, 173, 255;
     
     /*color schema base: lime */
     --color-base-700: 77, 124, 15;

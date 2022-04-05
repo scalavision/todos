@@ -11,7 +11,10 @@ function withOpacity(variableName) {
 
 module.exports = {
   content: [
-    'index.html'
+    /* Scan index.html and all Scala source files for tailwind classes
+    * Each tailwind css class found will be added to the css.
+    */
+    'index.html', "src/main/scala/todos/**/*.scala"
   ],
   theme: {
     screens: {
