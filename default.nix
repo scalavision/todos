@@ -21,6 +21,7 @@ mkShell rec {
     millJDK17
     scalaJDK17
     sbtJDK17
+    scala-cli
     # nodePackages.webpack
     # nodePackages.webpack-cli
   ];
