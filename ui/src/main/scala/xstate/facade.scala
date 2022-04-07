@@ -6,4 +6,8 @@ import xstate.types.*
 
 @js.native
 @JSImport("xstate", "createMachine")
-def createMachine(config: MachineConfig): js.Any = js.native
+def createMachine(config: js.Any): js.Any = js.native
+
+@js.native
+@JSImport("xstate", "interpret")
+def interpret(machine: js.Any): js.Any = js.native
