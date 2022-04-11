@@ -19,5 +19,8 @@ class PromiseMachine extends js.Object:
   val initial = "pending"
   val state = PromiseState()
 
+/** Example from Javascript Marathon, XState fundamentals
+  */
+
 def promiseMachine() =
   createMachine(new PromiseMachine())
